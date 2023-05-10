@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white">
+
+    <EditText
+        android:id="@+id/editTextPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/player_name_hint"
+        android:includeFontPadding="false"
+        android:maxLength="20"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/difficultyHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/difficultyHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/difficulty"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/difficultyGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlayerName" />
+
+    <RadioGroup
+        android:id="@+id/difficultyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/spriteHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyHeader"
+        app:layout_constraintVertical_bias="1">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="@string/easy"
+            app:layout_constraintBottom_toTopOf="@+id/difficultyHeader"
+            app:layout_constraintEnd_toStartOf="@+id/medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spriteHeader" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="@string/medium"
+            app:layout_constraintBottom_toTopOf="@+id/difficultyHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spriteHeader" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="@string/hard"
+            app:layout_constraintBottom_toTopOf="@+id/difficultyHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/medium"
+            app:layout_constraintTop_toBottomOf="@+id/spriteHeader" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/spriteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/spriteHeaderText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chooseFrog1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyGroup" />
+
+    <ImageButton
+        android:id="@+id/chooseFrog0"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/off_white"
+        android:contentDescription="@string/button_to_choose_frog0"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/chooseFrog1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spriteHeader"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/frog0_sprite0" />
+
+    <ImageButton
+        android:id="@+id/chooseFrog1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/off_white"
+        android:contentDescription="@string/button_to_choose_frog1"
+        app:chainUseRtl="false"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/chooseFrog2"
+        app:layout_constraintStart_toEndOf="@+id/chooseFrog0"
+        app:layout_constraintTop_toBottomOf="@+id/spriteHeader"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/frog1_sprite0" />
+
+    <ImageButton
+        android:id="@+id/chooseFrog2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/off_white"
+        android:contentDescription="@string/button_to_choose_frog2"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooseFrog1"
+        app:layout_constraintTop_toBottomOf="@+id/spriteHeader"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/frog2_sprite0" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/title_green"
+        android:text="@string/confirm_selections"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseFrog1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

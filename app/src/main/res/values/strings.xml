@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Crossy Project</string>
+    <string name="title_activity_game">Game</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_conf">Conf</string>
+    <string name="confirm_selections">Confirm Selections</string>
+    <string name="player_name_hint">Enter Player Name</string>
+    <string name="hard">Hard</string>
+    <string name="medium">Medium</string>
+    <string name="easy">Easy</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="button_to_choose_frog0">Button to choose frog0</string>
+    <string name="button_to_choose_frog1">Button to choose frog1</string>
+    <string name="button_to_choose_frog2">Button to choose frog2</string>
+    <string name="startButtonText">Start</string>
+    <string name="Title">Frogger 2.0</string>
+    <string name="spriteHeaderText">Select your frog</string>
+</resources>

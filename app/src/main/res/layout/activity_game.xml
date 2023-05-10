@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.crossyproject.GameSurface
+        android:id="@+id/gameSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="U"
+            android:backgroundTint="@color/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875" />
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="D"
+            android:backgroundTint="@color/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="L"
+            android:backgroundTint="@color/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.925" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="R"
+            android:backgroundTint="@color/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.925"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.example.crossyproject.GameSurface-->
+<!--            android:id="@+id/gameSurface"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="600dp" />-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="650dp">-->
+
+<!--            <Button-->
+<!--                android:text="Left"-->
+<!--                android:id="@+id/leftButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <Button-->
+<!--                android:text="Up"-->
+<!--                android:id="@+id/upButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <Button-->
+<!--                android:text="Right"-->
+<!--                android:id="@+id/rightButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <Button-->
+<!--                android:text="Down"-->
+<!--                android:id="@+id/downButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Name: "/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/stats"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lives: Points: "/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/difficulty"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Difficulty: "/>-->
+<!--        </LinearLayout>-->
+
+<!--    </FrameLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
